@@ -4,8 +4,8 @@
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 %\usepackage[latin1]{inputenc}
-\usepackage[francais]{babel}
-\usepackage{scrpage2}
+\usepackage[french]{babel}
+\usepackage{scrlayer-scrpage}
 \usepackage{amsthm}
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -23,7 +23,6 @@
 \usepackage{eurosym}
 \usepackage{ifthen}
 \usepackage{tkz-euclide}
-\usetkzobj{all}
 \usepackage{tikz}
 \usepackage{tabularx}
 \usepackage{array}
@@ -276,8 +275,8 @@
 
 \def\classe{}
 \def\lycee{}
-\def\season{2018/2019}
-\def\init{JW}
+%\def\season{2025/26}
+%\def\init{JB}
 
 %\ifoot{\small \classe}
 %\cfoot{\normalfont\small \lycee}
@@ -319,6 +318,23 @@
     \end{tikzpicture}
     }
    ]
+   
+
+\titleformat{\section}
+  {\Large\bfseries\color{\scriptcolor}} % font
+  {\thesection}{1em}
+  {\btitle} % before-code, e.g. TikZ box opening
+
+\titleformat{\subsection}
+  {\large\bfseries\color{\scriptcolor}} % font
+  {\thesection}{1em}
+  {\btitle} % before-code, e.g. TikZ box opening
+
+\titleformat{\subsubsection}
+  {\large\bfseries\color{\scriptcolor}} % font
+  {\thesection}{1em}
+  {\btitle} % before-code, e.g. TikZ box opening
+
 
 \def\chaptertitle{}
 
@@ -389,9 +405,9 @@
 
 %\addtokomafont{part}{\LARGE\normalfont\scshape\color{\scriptcolor}}
 %\addtokomafont{chapter}{\LARGE\normalfont\scshape\color{\scriptcolor}}
-\addtokomafont{section}{\Large\bfseries\color{\scriptcolor}}
-\addtokomafont{subsection}{\large\bfseries\color{\scriptcolor}}
-\addtokomafont{subsubsection}{\large\bfseries\color{\scriptcolor}}
+%\addtokomafont{section}{\Large\bfseries\color{\scriptcolor}}
+%\addtokomafont{subsection}{\large\bfseries\color{\scriptcolor}}
+%\addtokomafont{subsubsection}{\large\bfseries\color{\scriptcolor}}
 
 
 

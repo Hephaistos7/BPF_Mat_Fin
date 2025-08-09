@@ -111,7 +111,7 @@
 \newboolean{comment}
 \setboolean{comment}{true}
 %---------------------- Comment
-\newcommand\id[1]{\ifthenelse{\boolean{comment}}{{\color{lightblue}\slshape #1}}}{}
+\newcommand\id[1]{\ifthenelse{\boolean{comment}}{\color{lightblue}\slshape #1}{}}
 %---------------------- Question
 \newcommand{\que}[1]
 {\ifthenelse{\boolean{comment}}
